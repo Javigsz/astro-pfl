@@ -1,0 +1,31 @@
+---
+// src/components/Hero.astro
+import MILOGOIG from '../assets/MILOGOIGBUG.png';
+export const props = { id: '', class: '' };
+const { id, class: className } = Astro.props;
+---
+
+<section 
+  id={id} 
+  class={`min-h-screen bg-background dark:bg-background-dark flex items-center justify-center ${className}`}
+>
+  <div class="text-center px-4">
+    <img src={MILOGOIG.src} alt="Logo" class="w-32 h-32 mx-auto mb-4 rounded-full shadow-lg" />
+    <h1 class="text-5xl md:text-6xl font-bold mb-6" style="text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);">Hi, I'm Javier Guerrero</h1>
+    <p class="text-xl md:text-2xl opacity-70 max-w-2xl mx-auto">
+      Computer engineer and web developer.
+    </p>
+    <a 
+      href="#projects" 
+      class="mt-8 inline-block px-8 py-5 bg-button dark:bg-button-dark font-bold text-headline dark:text-headline-dark rounded-lg hover:shadow-md dark:hover:shadow-xs hover:dark:shadow-button-dark"
+    >
+      Check my projects
+    </a>
+    <a 
+      href="#about" 
+      class="mt-8 inline-block px-8 py-5 bg-button dark:bg-button-dark font-bold text-headline dark:text-headline-dark rounded-lg hover:shadow-md dark:hover:shadow-xs hover:dark:shadow-button-dark"
+    >
+      About me
+    </a>
+  </div>
+</section>

@@ -1,0 +1,29 @@
+---
+import icons from '../data/icons.js';
+const { id, class: className } = Astro.props;
+---
+
+<section 
+  id={id}
+  class={`min-h-screen bg-background dark:bg-background-dark flex items-center justify-center ${className}`}
+>
+  <div class="text-center px-4">
+    <h1 class="text-5xl md:text-6xl font-bold mb-6">About me</h1>
+    <div class="mx-auto max-w-4xl px-4 py-8 shadow-md dark:border-2 border-white/25 text-paragraph dark:text-paragraph-dark">
+      <p>My name is <strong>Javier Guerrero Sanchez</strong> and I am a <strong>Software Engineer</strong> and <strong>Web Developer</strong>. I have a <strong>Computer Engineer</strong> bachelor's degree from
+        Universidad de Cordoba, Spain. I am passionate about technology and I love to learn new things. I have experience in web development and data science. I am always looking for new challenges and opportunities to grow as a developer.</p>
+      </p>
+    </div>
+    <div class="mt-16">
+      <h1 class="text-3xl font-bold mb-12">Skills</h1>
+      <ul class="list-none flex flex-wrap justify-center gap-4 text-left max-w-2xl mx-auto mt-4 cursor-default">
+        {Object.values(icons).map(({ title, svg }) => (
+          <li class="flex items-center gap-2 p-2 bg-button dark:bg-button text-headline dark:text-headline-dark rounded-3xl shadow-md transition-transform transform hover:scale-105">
+            <span 
+              set:html={svg}
+              class="filter dark:invert"/>
+            {title}
+          </li>
+        ))}
+  </div>
+</section>

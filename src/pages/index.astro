@@ -1,0 +1,19 @@
+---
+import "../styles/global.css";
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import HeroSection from '../components/Hero.astro';
+import ProjectsSection from '../components/Project.astro';
+import AboutSection from '../components/About.astro';
+import ContactSection from '../components/Contact.astro';
+---
+
+<Layout>
+  <Header />
+  <main class="h-screen overflow-y-scroll dark:bg-black dark:text-white font-rubik">
+    <HeroSection id="home" class="snap-start" />
+    <ProjectsSection id="projects" class="snap-start" />
+    <AboutSection id="about" class="snap-start" />
+    <ContactSection id="contact" class="snap-start" />
+  </main>
+</Layout>

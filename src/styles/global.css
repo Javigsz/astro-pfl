@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-roboto: "Roboto", sans-serif; 
+}
+
+@theme {
+  --font-rubik: "Rubik", sans-serif; 
+} 
+
+@theme {
+  --color-background: #eff0f3;
+  /* --color-button: #ff8e3c; */
+  --color-button: #ff8906;
+  --color-headline: #0d0d0d;
+  --color-paragraph: #2a2a2a;
+  --color-background-dark: #0f0e17;
+  --color-button-dark: #ff8906;
+  --color-headline-dark: #fffffe;
+  --color-paragraph-dark: #a7a9be;
+}
+
+/* Scroll personalizado
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  .snap-container {
+    -webkit-overflow-scrolling: touch;
+  }
+} */

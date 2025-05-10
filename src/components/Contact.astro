@@ -1,0 +1,26 @@
+---
+import social from '../data/social.js';
+const {id, class: className} = Astro.props;
+---
+
+<section 
+  id={id} 
+  class={`min-h-screen flex items-center justify-center bg-background dark:bg-background-dark ${className}`}
+>
+  <div class="text-center px-4">
+    <h1 class="text-5xl md:text-6xl font-bold mb-6">Contact me</h1>
+    <p class="text-xl md:text-2xl opacity-70 max-w-2xl mx-auto">
+      If you want to contact me, you can do it through my social networks or by email.
+    </p>
+    <ul class="mt-8 flex flex-col items-center justify-center gap-3">
+      {Object.values(social).map(({ id, name, icon, link }) => (
+        <li class="flex items-center justify-center text-xl gap-2 p-2 w-1/2 bg-button text-headline dark:buttonñdark dark:text-headline-dark rounded-3xl shadow-md transition-transform transform hover:scale-105">
+          <a href={link} target="_blank" rel="noopener noreferrer" class="flex items-center gap-2">
+            <span set:html={icon} class="filter dark:invert"/>
+            {name}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
