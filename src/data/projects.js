@@ -15,7 +15,7 @@ export const projects = [
     description:
       "OrangeSky is a web social media application similar to twitter. It allows you to create a profile, post tweets and interact with other users.",
     image: "/images/Project-5.png",
-    tags: ["NextJs", "Tailwind", "Firebase"],
+    tags: ["NextJs", "Tailwind", "Firebase", "Typescript"],
     link: "orange-sky.vercel.app",
     source: "https://github.com/javigsz/orangeSky",
   },
