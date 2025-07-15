@@ -16,7 +16,7 @@ export const projects = [
       "OrangeSky is a web social media application similar to twitter. It allows you to create a profile, post tweets and interact with other users.",
     image: "/images/Project-5.png",
     tags: ["NextJs", "Tailwind", "Firebase", "Typescript"],
-    link: "orange-sky.vercel.app",
+    link: "https://orange-sky.vercel.app",
     source: "https://github.com/javigsz/orangeSky",
   },
   {
@@ -26,7 +26,7 @@ export const projects = [
       "Local Weather is a web application that allows you to get the weather of a specific location. It uses the OpenWeather API.",
     image: "/images/Project-6.png",
     tags: ["VueJs", "Tailwind"],
-    link: "localweathertracker.netlify.app",
+    link: "https://localweathertracker.netlify.app",
     source: "https://github.com/Javigsz/weather-app",
   },
   {
